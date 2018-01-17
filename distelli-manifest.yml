@@ -8,7 +8,7 @@ adam.bottchen/NodeCentOSPSimpleApp:
     - node_modules/
   PreInstall:
     - echo "PreInstall Starting."
-    - sudo yum -y install epel-release
+    - sudo yum -y --enablerepo=extras install epel-release
     - sudo yum -y install nodejs --enablerepo epel
     - sudo yum -y install npm --enablerepo epel
   PostInstall:
